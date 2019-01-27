@@ -16,9 +16,8 @@ public class MainActivity extends AppCompatActivity {
         actionbar.hide();
     }
 
-    public void buttonOnClick(View v)
-    {
-        Button button  = (Button)v;
+    public void buttonOnClick(View m) {
+        Button button = (Button) m;
         button.setText("Clicked.");
     }
 }
