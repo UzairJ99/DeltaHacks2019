@@ -1,10 +1,10 @@
 package com.example.newapp;
 
+import android.content.Intent;
+import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,8 +16,8 @@ public class MainActivity extends AppCompatActivity {
         actionbar.hide();
     }
 
-    public void buttonOnClick(View m) {
-        Button button = (Button) m;
-        button.setText("Clicked.");
+    public void buttonOnClick(View view) {
+        Intent nextPage = new Intent(MainActivity.this, ProfilePage.class);
+        startActivity(nextPage);
     }
 }
