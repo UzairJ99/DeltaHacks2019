@@ -3,6 +3,8 @@ package com.example.newapp;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -12,5 +14,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ActionBar actionbar = getSupportActionBar();
         actionbar.hide();
+    }
+
+    public void buttonOnClick(View v)
+    {
+        Button button  = (Button)v;
+        button.setText("Clicked.");
     }
 }

@@ -52,6 +52,7 @@
 
     <Button
         android:id="@+id/btnLogin"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="296dp"
         android:layout_height="46dp"
         android:layout_marginStart="8dp"
@@ -59,8 +60,8 @@
         android:layout_marginTop="44dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        style="?android:attr/borderlessButtonStyle"
         android:background="@drawable/round_shape_btn"
+        android:onClick="buttonOnClick"
         android:text="Login"
         android:textAppearance="@style/TextAppearance.AppCompat.Button"
         app:layout_constraintEnd_toEndOf="parent"
@@ -70,6 +71,7 @@
 
     <Button
         android:id="@+id/btnSignup"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="295dp"
         android:layout_height="46dp"
         android:layout_marginStart="8dp"
@@ -78,9 +80,9 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/round_shape_btn"
+        android:onClick="buttonOnClick"
         android:text="Sign Up!"
         android:textAppearance="@style/TextAppearance.AppCompat.Button"
-        style="?android:attr/borderlessButtonStyle"
         app:layout_constraintBottom_toBottomOf="@+id/divider2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
